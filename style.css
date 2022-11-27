@@ -1,0 +1,940 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+}
+/* mobile screen */
+@media(max-width: 480px){
+    #recent-jobs{
+        background-color: white;
+        margin: 2em 0.7em 1em 0.7em;
+        padding: 0;
+        border: 0;
+    }
+    #recent-jobs #header > h3{
+        font-size: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+    #recent-jobs #browse-jobs{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    #recent-jobs #browse-jobs #browse > a {
+        text-decoration: none;
+        margin-right: 0.8em;
+    }
+    #recent-jobs > #cards{
+        margin-top: 1em;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    
+    }
+    #recent-jobs > #cards > #card{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px #00000014;
+    }
+    #recent-jobs > #cards > #card > #head{
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0.5em 0 0.5em;
+        font-size: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #recent-jobs > #cards > #card >  #body {
+        display: flex;
+    }
+    #recent-jobs > #cards > #card >  #body > #item {
+        display: flex;
+        margin: 1em 0.5em 0 0.5em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 9px;
+        color: #babcbc;
+        opacity: 0.9;
+    }
+    #card >  #body > #item > #icon{
+        padding-right: 5px;
+    }
+    #card > hr {
+        margin: 0.8em 1em 1.2em 0.8em;
+    }
+    #card > #last-item{
+        display: flex;
+        justify-content: space-between;
+        color: #0373AA;
+    }
+    #card > #last-item > #item{
+        display: flex;
+    }
+    #card > #last-item > #item > #img{
+        width: 2vw;
+        height: 4vh;
+        margin: 0 0.5em 0 0.7em;
+    
+    }
+    #card > #last-item > #item > #img > img{
+        width: 2vw;
+        height: 4vh;
+    }
+    #card > #last-item > #div{
+        width: 15vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DCEBF9; 
+        color: #0373AA;
+    }    
+    #card > #last-item > #div2{
+        width: 15vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5BC176;
+        background-color: #DEF3E3;
+    }
+    #card > #last-item > #div3{
+        width: 15vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FBEFE3;
+        color: #B2987F;
+    }
+    #card > #last-item > #div4{
+        width: 15vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F0DAE9;
+        color: #B54790;
+    }    #b{
+        margin: 1.5em 0 0.8em 0;
+    }
+    #b > #browse-jobs{
+        background-color: #13334A;
+        width: 200px;
+        height: 35px;
+        margin: 0 auto;
+        color: white;
+        align-items: center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    #blue {
+        margin: 2em 0 0 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        height: 600px;
+        background-color: #13334A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #blue > #container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #blue > #container > #cards {
+        width: 100%;
+        height: 100%;
+        padding-left: 55px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+    }
+    #blue > #container > #cards > #card {
+        width: 80%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 3px 60px #00000042;
+    }
+    #blue > #container > #cards > #card > #head {
+        margin-top: 1em;
+        width: 65px;
+        height: 65px;
+        background-color: #24455C;
+        border-radius: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ABBFCF;
+        font-size: 18.6px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #blue > #container > #cards > #card > #title {
+        margin-top: 1em;
+        font-size: 13px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #FBFCFF;
+    }
+    #blue > #container > #cards > #card > #descriptn{
+        padding: 1em;
+        font-size: 13px;
+        font-family: 'NanumGothic', sans-serif;
+        color: #ABBFCF;
+        text-align: center;
+    }
+    #blue > #sign-up {
+        margin-top: 2em;
+        width: 200px;
+        height: 50px;
+        background-color: #0373AA;
+        font-size: 15px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #C5E5FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.4em;
+    }
+
+    #blue > #sign-up > img {
+        margin-left: 2em;
+    }
+}
+
+/* Tablets and ipad screen */
+@media (min-width: 481px) and (max-width: 767px){
+    #recent-jobs{
+        background-color: white;
+        margin: 3em 1.5em 1em 1.5em;
+        padding: 0;
+        border: 0;
+    }
+    #recent-jobs #header > h3{
+        font-size: 35px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+    #recent-jobs #browse-jobs{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    #recent-jobs #browse-jobs #browse > a {
+        text-decoration: none;
+        margin-right: 0.8em;
+    }
+    #recent-jobs > #cards{
+        margin-top: 1em;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    
+    }
+    #recent-jobs > #cards > #card{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px #00000014;
+    }
+    #recent-jobs > #cards > #card > #head{
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0.5em 0 0.5em;
+        font-size: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #recent-jobs > #cards > #card >  #body {
+        display: flex;
+    }
+    #recent-jobs > #cards > #card >  #body > #item {
+        display: flex;
+        margin: 1em 0.5em 0 0.5em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 9px;
+        color: #babcbc;
+        opacity: 0.9;
+    }
+    #card >  #body > #item > #icon{
+        padding-right: 5px;
+    }
+    #card > hr {
+        margin: 0.8em 1em 1.2em 0.8em;
+    }
+    #card > #last-item{
+        display: flex;
+        justify-content: space-between;
+        color: #0373AA;
+    }
+    #card > #last-item > #item{
+        display: flex;
+    }
+    #card > #last-item > #item > #img{
+        width: 1vw;
+        height: 2vh;
+        padding: 5px;
+        margin: 0 0.5em 0 0.7em;
+    
+    }
+    #card > #last-item > #item > #img > img{
+        width: 1vw;
+        height: 2vh;
+    }
+    #card > #last-item > #div{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DCEBF9; 
+        color: #0373AA;
+    }    
+    #card > #last-item > #div2{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5BC176;
+        background-color: #DEF3E3;
+    }
+    #card > #last-item > #div3{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FBEFE3;
+        color: #B2987F;
+    }
+    #card > #last-item > #div4{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F0DAE9;
+        color: #B54790;
+    }    #b{
+        margin: 1.5em 0 0.8em 0;
+    }
+    #b > #browse-jobs{
+        background-color: #13334A;
+        width: 250px;
+        height: 45px;
+        margin: 0 auto;
+        color: white;
+        align-items: center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    #blue {
+        margin: 2em 0 0 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        height: 470px;
+        background-color: #13334A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #blue > #container{
+        width: 839px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #blue > #container > #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+    #blue > #container > #cards > #card {
+        width: 150px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 3px 60px #00000042;
+    }
+    #blue > #container > #cards > #card > #head {
+        margin-top: 1em;
+        width: 50px;
+        height: 50px;
+        background-color: #24455C;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ABBFCF;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #blue > #container > #cards > #card > #title {
+        padding: 1em 0 0 1em;
+        margin-top: 1em;
+        font-size: 12px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #FBFCFF;
+    }
+    #blue > #container > #cards > #card > #descriptn{
+        padding: 1em;
+        font-size: 13px;
+        font-family: 'NanumGothic', sans-serif;
+        color: #ABBFCF;
+        text-align: center;
+    }
+    #blue > #sign-up {
+        width: 269px;
+        height: 54px;
+        background-color: #0373AA;
+        font-size: 15px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #C5E5FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.4em;
+    }
+
+    #blue > #sign-up > img {
+        margin-left: 2em;
+    }
+}
+
+/* Tablets Ipads portrait mode max-width:1024px */
+@media (min-width: 768px) and (max-width: 1020px){
+    #recent-jobs{
+        background-color: white;
+        margin: 3em 1.5em 1em 1.5em;
+        padding: 0;
+        border: 0;
+    }
+    #recent-jobs #header > h3{
+        font-size: 35px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+    #recent-jobs #browse-jobs{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    #recent-jobs #browse-jobs #browse > a {
+        text-decoration: none;
+        margin-right: 0.8em;
+    }
+    #recent-jobs > #cards{
+        margin-top: 1em;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    
+    }
+    #recent-jobs > #cards > #card{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px #00000014;
+    }
+    #recent-jobs > #cards > #card > #head{
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0.5em 0 0.5em;
+        font-size: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #recent-jobs > #cards > #card >  #body {
+        display: flex;
+    }
+    #recent-jobs > #cards > #card >  #body > #item {
+        display: flex;
+        margin: 1em 0.5em 0 0.5em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 9px;
+        color: #babcbc;
+        opacity: 0.9;
+    }
+    #card >  #body > #item > #icon{
+        padding-right: 5px;
+    }
+    #card > hr {
+        margin: 0.8em 1em 1.2em 0.8em;
+    }
+    #card > #last-item{
+        display: flex;
+        justify-content: space-between;
+        color: #0373AA;
+    }
+    #card > #last-item > #item{
+        display: flex;
+    }
+    #card > #last-item > #item > #img{
+        width: 1vw;
+        height: 2vh;
+        padding: 5px;
+        margin: 0 0.5em 0 0.7em;
+    
+    }
+    #card > #last-item > #item > #img > img{
+        width: 1vw;
+        height: 2vh;
+    }
+    #card > #last-item > #div{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DCEBF9; 
+        color: #0373AA;
+    }    
+    #card > #last-item > #div2{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5BC176;
+        background-color: #DEF3E3;
+    }
+    #card > #last-item > #div3{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FBEFE3;
+        color: #B2987F;
+    }
+    #card > #last-item > #div4{
+        width: 8vw;
+        height: 2vh;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F0DAE9;
+        color: #B54790;
+    }    #b{
+        margin: 1.5em 0 0.8em 0;
+    }
+    #b > #browse-jobs{
+        background-color: #13334A;
+        width: 250px;
+        height: 45px;
+        margin: 0 auto;
+        color: white;
+        align-items: center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    #blue {
+        margin: 2em 0 0 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        height: 470px;
+        background-color: #13334A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #blue > #container{
+        width: 839px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #blue > #container > #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+    #blue > #container > #cards > #card {
+        width: 230px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 3px 60px #00000042;
+    }
+    #blue > #container > #cards > #card > #head {
+        width: 79px;
+        height: 79px;
+        background-color: #24455C;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ABBFCF;
+        font-size: 18.6px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #blue > #container > #cards > #card > #title {
+        margin-top: 1em;
+        font-size: 13px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #FBFCFF;
+    }
+    #blue > #container > #cards > #card > #descriptn{
+        padding: 1em;
+        font-size: 13px;
+        font-family: 'NanumGothic', sans-serif;
+        color: #ABBFCF;
+        text-align: center;
+    }
+    #blue > #sign-up {
+        width: 269px;
+        height: 54px;
+        background-color: #0373AA;
+        font-size: 15px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #C5E5FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.4em;
+    }
+
+    #blue > #sign-up > img {
+        margin-left: 2em;
+    }
+}
+/* Desktops max-width:1280px */
+@media (min-width: 1021px) and (max-width: 1280px){
+    #recent-jobs{
+        background-color: white;
+        margin: 4em 3em 1.9em 3em;
+        padding: 0;
+        border: 0;
+    }
+    #recent-jobs #header > h3{
+        font-size: 37.32px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+    #recent-jobs #browse-jobs{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+    #recent-jobs #browse-jobs #browse > a {
+        text-decoration: none;
+        margin-right: 1em;
+    }
+    #recent-jobs > #cards{
+        margin-top: 1em;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    
+    }
+    #recent-jobs > #cards > #card{
+        width: 100%;
+        height: 184px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px #00000014;
+    }
+    #recent-jobs > #cards > #card > #head{
+        display: flex;
+        justify-content: space-between;
+        margin: 1.6em 1.2em 0 1.2em;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #recent-jobs > #cards > #card >  #body {
+        display: flex;
+    }
+    #recent-jobs > #cards > #card >  #body > #item {
+        display: flex;
+        margin: 0.8em 0.8em 0 1.6em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: #babcbc;
+        opacity: 0.9;
+    }
+    #card >  #body > #item > #icon{
+        padding-right: 5px;
+    }
+    #card > hr {
+        margin: 2em 1.6em 1.8em 1.7em;
+    }
+    #card > #last-item{
+        display: flex;
+        justify-content: space-between;
+        color: #0373AA;
+    }
+    #card > #last-item > #item{
+        display: flex;
+    }
+    #card > #last-item > #item > #img{
+        width: 2vw;
+        height: 4vh;
+        padding: 5px;
+        margin: 0 1em 0 1.7em;
+    
+    }
+    #card > #last-item > #item > #img > img{
+        width: 2vw;
+        height: 4vh;
+    }
+    #card > #last-item > #div{
+        width: 6vw;
+        height: 3vh;
+        background-color: #DCEBF9; 
+        color: #0373AA;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 10.12px;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #card > #last-item > #div2{
+        width: 6vw;
+        height: 3vh;
+        color: #5BC176;
+        background-color: #DEF3E3;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 10.12px;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #card > #last-item > #div3{
+        width: 6vw;
+        height: 3vh;
+        background-color: #FBEFE3;
+        color: #B2987F;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 10.12px;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #card > #last-item > #div4{
+        width: 6vw;
+        height: 3vh;
+        background-color: #F0DAE9;
+        color: #B54790;
+        border-radius: 2em  0 0 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        font-size: 10.12px;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #b{
+        margin: 4em 0 2em 0;
+    }
+    #b > #browse-jobs{
+        background-color: #13334A;
+        width: 269px;
+        height: 54px;
+        margin: 0 auto;
+        color: white;
+        align-items: center;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    #blue {
+        margin: 4em 0 0 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        height: 646px;
+        background-color: #13334A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #blue > #container{
+        margin-top: 4em;
+        width: 839px;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #blue > #container > #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+    #blue > #container > #cards > #card {
+        width: 269px;
+        height: 295px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 3px 60px #00000042;
+    }
+    #blue > #container > #cards > #card > #head {
+        width: 79px;
+        height: 79px;
+        background-color: #24455C;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ABBFCF;
+        font-size: 18.6px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #blue > #container > #cards > #card > #title {
+        margin-top: 1em;
+        font-size: 15px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #FBFCFF;
+    }
+    #blue > #container > #cards > #card > #descriptn{
+        padding: 1em;
+        font-size: 15px;
+        font-family: 'NanumGothic', sans-serif;
+        color: #ABBFCF;
+        text-align: center;
+    }
+    #blue > #sign-up {
+        width: 269px;
+        height: 54px;
+        background-color: #0373AA;
+        margin-top: 2em;
+        font-size: 15px;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: bold;
+        color: #C5E5FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.4em;
+    }
+
+    #blue > #sign-up > img {
+        margin-left: 2em;
+    }
+
+} 
+
